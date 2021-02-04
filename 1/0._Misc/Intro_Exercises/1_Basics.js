@@ -9,8 +9,9 @@ const lastName = "Latif";
 // EXERCISE
 // show in the console
 // My first name is Anders and my last name is Latif
-console.log("My first name is ${firstName} and my last name is ${lastName}");
+console.log(`My first name is ${firstName} and my last name is ${lastName}`);
 console.log("My first name is " + firstName + " and my last name is " + lastName);
+console.log("My first name is %s and my last name is %s" , firstName, lastName);
 
 // --------------------------------------
 // Exercise 2 - Numbers and Strings
