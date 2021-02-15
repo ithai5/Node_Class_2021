@@ -14,7 +14,7 @@ console.log(myObj.message);
 // Exercise 2 - Defining an object. 
 
 // Create an object that has your name and age. 
-const newObj ={name: "itai Gramse", age : 27}
+const newObj ={name: "itai", age : 27};
 
 
 // --------------------------------------
@@ -35,7 +35,7 @@ const thisSong = {"description": "The best song in the world."}
 
 // remove the property "description" and add a property called "about" that should say "Just a tribute." 
 
-delete thisSong.description
+delete thisSong.description;
 thisSong.about = "Just a tribute.";
 console.log(thisSong);
 

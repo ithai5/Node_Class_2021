@@ -15,7 +15,7 @@ console.log(letters[1]);
 const friends = [];
 
 // What a lonely array. Add at least 3 friend objects to it.  
-friends.push('James', 'Lebron', 'Wade')
+friends.push({freindOne: 'James'}, {freindTwo:'Lebron'}, {freindThree: 'Wade'})
 console.log(friends);
 
 
@@ -66,7 +66,7 @@ const lettersExpanded = ["a","b","c", "d", "e", "f", "g", "h"];
 
 // log every second char in the array starting from b
 
-lettersExpanded.forEach((e,i)=>{
+lettersExpanded.forEach((e,i) => {
     if(i%2 !=0){console.log(e)}
 })
 
@@ -80,14 +80,11 @@ const discardedNumbers = [];
 
 // log the element if the number is above 6 or below 0
 // else push them to the array discardedNumbers
-numbers.forEach((e)=>{
-    if(e>6  || e< 0){
-        console.log(e);
-    }
-    else{
-        discardedNumbers.push(e)
-    }
-})
+
+
+numbers.forEach((e) => (e>6 || e< 0) ? console.log(e) : discardedNumbers.push(e));
 
 console.log(discardedNumbers);
+
+
 // --------------------------------------
