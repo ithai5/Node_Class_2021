@@ -46,17 +46,30 @@ app.get("/students/:id", (req, res) => { // :something - can pass a value throug
 
 //POST Methods - add new item to the list, in that case it will be student
 app.post("/students", (req, res) => {
-    const id = 4 //need to be automated function for getting id;
-    const student = {
-        id: id,
-        name: req.body.name
-    }
-    res.send(student)
+    newStudent = req.body
+    newStudent.id = students[students.length -1].id +1 //kind of automated function for getting id;
+    students.push(newStudent)
+    res.send(newStudent)
 })
 
 //PUT methods - get an id and update that student
 
+app.put("/students/:id", (req, res) => {
+    const studentForUpdate = students.find(student => student.id === Number(req.params.id))
+    const newInfoObject = req.body
+    const keysList = Object.keys(newInfoObject)
+    keysList.forEach((key) => studentForUpdate[key] = newInfoObject[key]) //adds new keys or update old values
+    res.send({"student updated: ": studentForUpdate})
+})
+
 //DELETE Methods - get an id and delete that student 
+
+app.delete("/students/:id", (req, res) => {
+    const indexToDelete = students.indexOf(students.find(student => student.id === Number(req.params.id)))
+    console.log(indexToDelete)
+    students.splice(indexToDelete,1)
+    res.send({})
+})
 
 app.listen(8080) //which port is used
 
