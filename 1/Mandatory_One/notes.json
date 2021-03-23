@@ -1,0 +1,286 @@
+{
+    "materials": [
+        {
+            "id": 1,
+            "subject": "Basic",
+            "notes": [        
+                {
+                    "id": 1,
+                    "title": "Data Types, Primitive",
+                    "description": "there are five primitve data types: String, Number, Boolean, undifined, null",
+                    "examples": ["const a = 3 // a is number data-type", "const name = 'itai' // name is string datatype"]                
+                },
+                {
+                    "id": 2,
+                    "title": "Data Types, Non-Primitive",
+                    "description": "there are three non-primative data types: Object, Array, RegExp",
+                    "examples": ["const person = {name: 'itai', age: 27} // pesron is an object type that in that case represent a person, age and name are premetive types a that are values inside the person object"]
+                },
+                {
+                    "id": 3,
+                    "title": "Const",
+                    "description": "use for declearing variables, but it cannot be reassigned",
+                    "examples": ["const number = 1"]
+                },
+                {
+                    "id": 4,
+                    "title": "Let",
+                    "description": "use for declearing varaibles, unlike const the variable can be reassigned",
+                    "examples": ["let name = itai ; name = john"]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "subject": "Strings",
+            "notes": [
+                {
+                    "id": 1,
+                    "title": "String creation",
+                    "description": "there are different ways to create strings ",
+                    "examples": ["const name ='itai' ", "const name = \"itai\" ", "const name = `itai`"]                
+                },
+                {
+                    "id": 2,
+                    "title": "Addding",
+                    "description": "can achived in different ways",
+                    "examples": ["`My first name is ${firstName} and my last name is ${lastName}`) //pay attention for the back ticks ", 
+                    "'My first name is ' + firstName + ' and my last name is ' + lastName ", "'My first name is %s and my last name is %s' , firstName, lastName"]                
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "subject": "Objects",
+            "notes": [{
+                "id": 1,
+                "title": "object declaration",
+                "description": "in order to declare an oject we will use {} and we will assign the values as key-pair",
+                "examples": ["const person = {name: 'itai' , age: 27, hobbies: ['basketball', 'chess'], saySomething =()=> console.log('I need food')  }"]                
+            },
+            {
+                "id": 2,
+                "title": "accessing values in object",
+                "description": "you can access a value by writing the object name and a '.' afterward we can write the key that we would like to access. We can also access by surrouning the kew with '[]' ",
+                "examples": ["person.name // will return itai", "person[name] // will return itai as well"]                
+            }, 
+            {
+                "id": 3,
+                "title": "Adding new propery",
+                "description": "To add new value we can assign by using the name of the object add '.' and following with the key that we would like to add, flow but the value",
+                "examples": ["person.isHungry = true"]                
+            },
+            {
+                "id": 4,
+                "title": "removing propery",
+                "description": "to remove a property we can use the keyword delete flow by the object name and the key name that we would like to remove ",
+                "examples": ["delete person.age"]                
+            }
+        ]
+        },
+        {
+            "id": 4,
+            "subject": "Arrays",
+            "notes": [
+                {
+                    "id": 1,
+                    "title": "Array declaration",
+                    "description": "to add new array we will sign it with [], array can hold diffent types and functions ",
+                    "examples": ["const letters = ['a', 'b', 'c', 'd']"]                
+                },
+                {
+                    "id": 4,
+                    "title": "Push and Pop",
+                    "description": "we will use the name of the array and push, it will be added in the last index of the arraay, you can remove the last object with the pop function ",
+                    "examples": ["letters.push('e') // the array will be now ['a', 'b', 'c', 'd', 'e']", "letters.pop() / /the array will be now ['a', 'b', 'c', 'd'] " ]                
+                },
+                {
+                    "id": 4,
+                    "title": "Removing Value",
+                    "description": "we will use the function splice which takes two arguemt the index of the value that we would like to remove and how many values we would like to remove, it will return an array of the removed items. if we will add move arguments is will add them in the index that been assign",
+                    "examples": ["letter.splice(1,1) // will be latter = ['a', 'c', 'd']", "letter.splice(1,1, 'mistake') // will be latter = ['a','mistake', 'c', 'd']" ]                
+                },
+            
+                {
+                    "id": 5,
+                    "title": "Spread Operator",
+                    "description": "allows an iterable to expand. it can use on array to copy it, or on an obejct to copy it to a new object",
+                    "examples":["const arr1 = [1,2,3]", "const arr2 = [4,5,6]", "const arr3 = [...arr1, ...arr2]", "console.log(arr3) // will print [1,2,3,4,5,6]", "const personOne ={name: 'itai', age:27}", "const personTwo= {food: 'pizza', sport: 'basketball', age: 28}", "const mergePerson = [...personOne, ...personTwo]", "console.log(mergePerson) // will print {name: 'itai', food: 'pizza', sport: 'basketball', age: 28}  notice that if both of the objects contain the same key the merge object will contain the last object vakue"]
+                }
+
+
+
+                
+                
+
+            ]
+        },
+        {
+            "id": 4,
+            "subject": "Functions",
+            "notes" : [
+                {
+                    "id": 1,
+                    "title": "Creating Functions",
+                    "description": "there are different ways to create functions,  you can assign it to a varable, create a normal function, and arrow function. ",
+                    "examples": ["function myFunction(){ console.log(`I'm function`)}", "const myfunction = () => console.log(`I'm a funciton as well`)"]                
+                },
+                {
+                    "id": 2,
+                    "title": "High oreder Functions",
+                    "description": "A function that accepts and/or returns another function is acalled a higher order function. Higher-Order function is a function that receives a function as an argument or returns the function as output.",
+                    "examples":[]
+                },
+                {
+                    "id": 3, 
+                    "title": ".forEach()",
+                    "description": "method executes a provided function once for each array element.",
+                    "examples": [
+                        "const array = ['a', 'b', 'c']",
+                        "array.forEach(element => console.log(element)) // it will print each element it the array"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "title": ".map",
+                    "description": "The map() method will take every returned value from the callback function and creates a new array using those values.",
+                    "examples":["const arr1 = [1, 2, 3]",
+                    "const arr2 = arr1.map(function(item) {",
+                      "return item * 2",
+                    "})",
+                    "console.log(arr2) // arr2 = 2,4,6 and arr1=1,2,3 "]
+                },
+                {
+                    "id": 5,
+                    "title": "filter()",
+                    "description": "method creates a new array with all elements that pass the test provided by the callback function.",
+                    "examples": ["const arr1 = [1, 2, 3, 4, 5, 6]", "const arr2 = arr1.filter( element => element %2 === 0) // arr1= 2,4,6"]
+                },
+                {
+                    "id": 6,
+                    "title": "reduce()",
+                    "description": "The reduce method executes the callback function on each member of the calling array which results in a single output value. The reduce method accepts two parameters: 1) The reducer function (callback), 2) and an optional initialValue"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "subject": "NodeJS",
+            "notes": [
+                {
+                    "id": 1,
+                    "title": "Navigating to Folder",
+                    "description": "Order to create a NodeJS applciton we will start with creating new folder, we will navigate with the CLI into the folder",
+                    "examples": ["cd directoryName // can be use to move to the directory that we would like to go to", "cd.. // will move us to one directory up", "ls // will list the directories entries"]                
+                },
+                {
+                    "id": 2,
+                    "title": "Creating package.json",
+                    "description": "package.json is afile that exists at the root of the js/ node project, it is holding the metadata for the project contain  dependancies, scripts, versions and more",
+                    "examples": ["{","'dependencies' :{someDependencies},", "'scripts': {someScripts}", "}"]                
+                },
+                {
+                    "id": 3,
+                    "title": "app.js",
+                    "description": "When creating new project, and designing our rest api it is commen that the main applcation will run on app.js file, we will create this file as well in our main folder.",
+                    "examples":[]
+                },
+                {
+                    "id": 4,
+                    "title": "npm install",
+                    "description": "after creating package.json we can run the commend npm install, which will create for us the node-module and install all the neccessry for running node.",
+                    "examples":["npm install"]
+                },
+                {
+                    "id": 5,
+                    "title": "Run JSFile",
+                    "description": "in order to run a js file we will use the commed node follow by the js file name.js, we need to be sure that node is install on the machine (node -v)",
+                    "examples":["node app.js"]
+                },
+                {
+                    "id": 6,
+                    "title": "Scripts",
+                    "description": "Sometimes we would like to write CLI commend while running the appliction fx: add environment variables. In order to do that we can add to our package.json a key of scripts that will hold an array, in the array it will hold a key that will be the name of the script and the value will be the script it self. to exicute it we will run in the terminal the commed run scriptName"
+                },
+                {
+                    "id": 7,
+                    "title": "Cross-env",
+                    "description": " since different machines uses different operation systems. We would like that our application will be able to run on all of them, and if we are using any CLI comment we need to write a specific one for each OP, or we can use the cross- env dependency."
+                },
+                {
+                    "id": 8,
+                    "title": "NPM INIT",
+                    "description": "I you are lazy, you can also use the commend npm init which will create package.json, and install the modules and the dependencies for you",
+                    "examples":["npm init"]
+                },
+                {
+                    "id": 9,
+                    "title": "Nodemon",
+                    "description": "it is a developer tool that will auto compile the your project with any change that happen, basiclly it will listen to the file change",
+                    "examples":["nodemoon app.js"]
+                }               
+            ]
+        },
+        {
+            "id": 6,
+            "subject": "Rest",
+            "notes":[
+                {
+                    "id": 1,
+                    "title": "What is REST",
+                    "description": "Representational state transfer is a software architectural style which uses a subset of HTTP. It is commonly used to create interactive applications that use Web services.",
+                    "examples":[]
+                },
+                {
+                    "id": 2,
+                    "title": "Express",
+                    "description": "Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.",
+                    "examples":[]
+                },
+                {
+                    "id": 3,
+                    "title": "Install Express",
+                    "description": "In our package.json under dependencies we will add new key that will name express, and the value will be the version that we would like to include. Afterwards we will run the commend nmp install",
+                    "examples":[]
+                },
+                {
+                    "id": 4,
+                    "title": "Import Express",
+                    "description": "to import the express into our application we will by creating the const app and will assign it to require express. The next step we will create a const of the express and we will tell to our app to listen to a port (normally we will use port 8080)",
+                    "examples":["const express = require('express')", "cosnt app = express()", "app.listen(8080, weCanAddAFunction)"]
+                },
+                {
+                    "id": 5,
+                    "title": "Get Method",
+                    "description": "After we import the express package we can now create get responses in order to create those we going to use the app constet",
+                    "examples":["app.get('/', (req, res) => res.send({ key : value})) // now we can see a json object in the root destination"]
+                },
+                {
+                    "id": 6,
+                    "title": "Req and Res Parameters",
+                    "description": "in our get, post, delete and more we will always include the URL that the client will communicate with the server and a function that will include request and response (req, res). the req will contain the request that the client sent, it could be parameters from the URL or body content.",
+                    "examples":["app.get('page/:id?',(req, res)) => { // we will assume the the client type the url localhost8080/page/5?name=itai","req.params.id //will be 5","req.query.name //will be itai, we can send more queries by adding &","}"]
+                },
+                {
+                    "id": 7,
+                    "title": "Post Method",
+                    "description": "If we would like to get a json object from the budy we will need to use express.json after we add it to our application we can use the req.body and assign it to an object",
+                    "examples":["app.use(express.json())", "const person = req.body"]
+                },
+                {
+                    "id": 8,
+                    "title": "Patch Method",
+                    "description": "in order to update an entry in our data base we woule like to use the patch method it will take as a parameter an id what we would like to update and we will get the info for update from the body we can use the spread operator to simplify the method",
+                    "examples":[]
+                },
+                {
+                    "id": 9,
+                    "title": "Delete Method",
+                    "description": "To delete an entry we will get the id that we would like to delete as a parameter from the URL"
+                }
+            ]
+        }
+
+    
+    ]
+}
