@@ -1,0 +1,1 @@
+document.getElementById("footer").innerText= ' © Itai Gramse ' + (new Date().getFullYear()) 

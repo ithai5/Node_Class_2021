@@ -1,0 +1,11 @@
+body {
+    background-color: aqua;
+}
+#container-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+#dragon-img{
+    width:200px;
+    height: auto;
+}

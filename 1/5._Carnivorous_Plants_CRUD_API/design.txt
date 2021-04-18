@@ -1,0 +1,15 @@
+
+
+***GET***
+"/plants" - retrive list of all plants
+"/plants/id" - retrive specific plant by id
+
+***POST***
+"/plants" - creates  a new plant entry
+
+***PATCH***
+"/plant/id" -update information in a specific id
+
+***DELETE***
+
+"/plants/id" -delete a specific id

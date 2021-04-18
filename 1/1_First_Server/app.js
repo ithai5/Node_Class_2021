@@ -1,9 +1,12 @@
 
+
+
 //when creating the npm project we need to create package.json project and include {}
 const express = require("express") //save it in a vairable so we can continue to work with it
 const app = express() //using it instant of the server
 
-
+const animal = require("./animal.json")
+console.log(animal)
 //nodemon - let you run the server as the file get updated
 
 app.use(express.json()) //allow the body to be json file 
@@ -58,7 +61,7 @@ app.put("/students/:id", (req, res) => {
     const studentForUpdate = students.find(student => student.id === Number(req.params.id))
     const newInfoObject = req.body
     const keysList = Object.keys(newInfoObject)
-    keysList.forEach((key) => studentForUpdate[key] = newInfoObject[key]) //adds new keys or update old values
+    keysList.map((key) => plantsForUpdate[key] = newInfoObject[key]) //adds new keys or update old values
     res.send({"student updated: ": studentForUpdate})
 })
 
@@ -71,5 +74,10 @@ app.delete("/students/:id", (req, res) => {
     res.send({})
 })
 
-app.listen(8080) //which port is used
+ //second argument takes a callback that takes an error as an argument
+
+app.listen(8080, (err) => {
+    (err) ? console.log(err) : console.log("Server is running on port:", 8080) 
+})
+
 

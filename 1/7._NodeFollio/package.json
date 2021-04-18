@@ -1,0 +1,28 @@
+{
+  "name": "nodeprotfolio",
+  "version": "0.0.1",
+  "description": "this is a protfolio build with nodejs",
+  "main": "app.js",
+  "scripts": {
+    "dev-start": "cross-env PORT=3000 nodemon  app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ithai5/Node_Class_2021.git"
+  },
+  "keywords": [
+    "protfolio",
+    "node",
+    "personal"
+  ],
+  "author": "ithai5",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ithai5/Node_Class_2021/issues"
+  },
+  "homepage": "https://github.com/ithai5/Node_Class_2021#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "cross-env": "7.0.3"
+  }
+}
