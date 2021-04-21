@@ -1,7 +1,9 @@
 body{
   margin: 0;
   font-family: sans-serif;
-  background-color: rgb(92, 92, 92);
+  background-color: rgb(49, 49, 49);
+  background-image: linear-gradient(to bottom right,  rgb(128, 128, 128), rgb(49, 49, 49));
+  color: rgb(158, 158, 158);
 }
 ul {
   list-style-type: none;
@@ -29,7 +31,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: rgba(219, 219, 219, 0.753);
 }
 
 .main-content{
@@ -55,6 +57,7 @@ li a:hover {
 
 
 
+
 #nav-menu{
   display: none;
 
@@ -73,5 +76,61 @@ li a:hover {
 nav{
   height: 100px;
   position: fixed;
+  
+}
+
+
+.main-title{
+  margin: 30px;
+}
+
+.links{
+  background-color: transparent
+}
+.social-media{
+  bottom: 250px;
+  right: 0;
+  position: fixed;
   float: right;
+  background-color: transparent
+ 
+}
+.linkedin{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: none;
+  width: 80px;
+  height: 40px;
+  background-color: #0274B3;
+  text-align: left;
+  -webkit-transition: All 0.5s ease-in-out
+
+}
+
+.linkedin:hover{
+  width: 90px;
+  height: 50px;
+  
+}
+.github{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: none;
+  width: 80px;
+  height: 40px;
+  background-color: rgb(0, 0, 0);
+  -webkit-transition: All 0.5s ease-in-out
+}
+
+.github:hover{
+  width: 90px;
+  height: 50px;
+}
+
+@media only screen and (max-width: 600px){
+  body{}
+
+  .social-media{
+    top: 30px;
+  }  
 }

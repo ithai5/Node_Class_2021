@@ -1,0 +1,54 @@
+.project{
+    border: solid thin rgb(75, 75, 75);
+    border-radius: 5px;
+    width: 550px;
+    height: 250px;
+    float: left;
+    margin: 15px;
+    background-color: rgb(49, 49, 49);
+    box-shadow: 2px 2px 4px rgb(17, 16, 16);
+    text-align: center;
+    font-family: Karantina-Bold;
+    font-size: 24px;
+    letter-spacing: 2px;
+    padding: 30px;
+    color: rgb(156, 169, 180);
+    -webkit-transition: All 0.5s ease-in-out
+
+}
+.project-tech{
+    border: solid thin rgb(78, 78, 78) ;
+    float: left;
+    margin: 10px;
+    color: #2F5A91;
+    padding: 5px;
+    font-size: 30px;
+    margin: 5px;
+    border-radius: 7px;
+    -webkit-transition: All 0.5s ease-in-out
+
+}
+
+.project-tech:hover{
+    
+    color: #2a4e7e;
+
+}
+.technologies{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+
+.project:hover{
+    background-color: rgb(80, 80, 80);
+
+}
+@media only screen and (max-width: 600px){
+    .project{
+        width: 200px;
+        height: fit-content;
+    }    
+}

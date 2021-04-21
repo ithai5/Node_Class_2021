@@ -1,22 +1,31 @@
-//const { response } = require("express");
-const divElement = document.getElementById("projects")
 
+const divElement = document.getElementById("projects")
     fetch('/api/projects')
     .then(res =>  res.json())
         .then(data => data.projects.forEach(project => {
-          console.log(project)  
-        //   divElement.innerHTML(`<h1>${element.title}</h1> <div>${element.description} </div>`)
+            const aTag = document.createElement('a')
+            aTag.title = "githubLink"
+            aTag.href = project.gitLink
+            
             const projectDiv = document.createElement("div")
-            const projectTitle = document.createElement("h2")
-            const projectDescription = document.createElement("div")
-            projectTitle.innerText = project.title
-            projectDescription.innerHTML = project.description
-            projectDiv.appendChild(projectTitle)
-            projectDiv.appendChild(projectDescription)
-            divElement.appendChild(projectDiv)
-
+            projectDiv.classList.add("project")
+            const title = document.createElement("h2")
+            title.classList.add("project-title")
+            const description = document.createElement("div")
+            description.classList.add("project-description")
+            title.innerText = project.title
+            description.innerHTML = project.description
+            projectDiv.appendChild(title)
+            projectDiv.appendChild(description)
+            const technologies = document.createElement("div")
+            technologies.classList.add("technologies")
+            projectDiv.appendChild(technologies)
+            project.technologiesInvolve.forEach(tech => {
+              const techDiv=document.createElement("div")
+              techDiv.classList.add("project-tech")
+              techDiv.innerHTML = tech
+              technologies.appendChild(techDiv)
+            })
+            aTag.appendChild(projectDiv)
+            divElement.appendChild(aTag)
     }))
-
-
-
-        

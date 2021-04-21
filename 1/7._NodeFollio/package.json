@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/ithai5/Node_Class_2021#readme",
   "dependencies": {
+    "cross-env": "7.0.3",
     "express": "^4.17.1",
-    "cross-env": "7.0.3"
+    "nodemailer": "^6.5.0"
   }
 }

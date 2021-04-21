@@ -8,17 +8,17 @@
 
 @font-face {
     font-family: Karantina-bold;
-    src: url('../fonts/Karantina-Bold.ttf');
+    src: url('../fonts/Karantina/Karantina-Bold.ttf');
 }
 
 @font-face {
     font-family: Karantina-Light;
-    src: url('../fonts/Karantina-Light.ttf');
+    src: url('../fonts/Karantina/Karantina-Light.ttf');
 }
 
 @font-face {
     font-family: Karantina-Regular;
-    src: url('../fonts/Karantina-Regular.ttf');
+    src: url('../fonts/Karantina/Karantina-Regular.ttf');
 }
 .title{
     padding: 50px;
@@ -28,7 +28,7 @@
 }
 .last-name{
     margin-left: 20px;
-    color: rgb(34, 34, 34);
+    color: rgb(73, 73, 73);
 }
 .moto{
     margin-left: 100px;
@@ -37,4 +37,15 @@
 }
 .moto-color{
     color: #2F5A91;
+}
+
+
+@media only screen and (max-width: 600px){
+    .profile-picture{
+        display: none;
+    }
+    .moto{
+        margin-left: 0px ;
+    }
+    
 }
