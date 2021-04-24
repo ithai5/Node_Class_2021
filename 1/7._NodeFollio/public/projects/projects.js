@@ -6,6 +6,7 @@ const divElement = document.getElementById("projects")
             const aTag = document.createElement('a')
             aTag.title = "githubLink"
             aTag.href = project.gitLink
+            aTag.target= '_blank'
             const projectDiv = document.createElement("div")
             projectDiv.classList.add("project")
             const title = document.createElement("h2")

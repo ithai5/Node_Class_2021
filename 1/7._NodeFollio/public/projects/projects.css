@@ -5,7 +5,7 @@
     height: 250px; 
     float: left;
     margin: 1%;
-    background-color:  #C7D3DD;
+    background-color:   #EAEBED;
     box-shadow: 2px 2px 4px rgb(134, 134, 134);
     text-align: center;
     font-size: 24px;
@@ -18,16 +18,23 @@
 .project-description{
     font-family: WorkSans-Regular;
     font-size: 15px;
+    margin-bottom: 15px;
 }
 .project-tech{
-    
-    float: left;
-    margin: 10px;
 
-    padding: 5px;
-    font-size: 15px;
+    border: #2f5a9179 solid 0.5px;
+    border-radius: 80px;
+    float: left;
+    margin: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:2px;
+    padding-bottom: 2px;
+    font-size: 14px;
     margin: 5px;
-    border-radius: 7px;
+    color: #EAEBED;
+    font-family: WorkSans-ExtraLight;
+    background-color: #2F5A91;
     -webkit-transition: All 0.5s ease-in-out
 
 }
@@ -41,7 +48,7 @@
 
 
 .project:hover{
-    background-color: #E8EEF2;
+    background-color: #e8eef285;
 
 }
 @media only screen and (max-width: 950px){

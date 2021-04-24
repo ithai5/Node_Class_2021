@@ -24,7 +24,11 @@ input[type=text], select, textarea,input[type=email] {
   
   form{
     border-radius: 10px;
-    background-color: #D6C9C9;
+    background-color: #EAEBED;
     padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    filter: drop-shadow(0px 0px 10px #2f5a9179);
+    background-color: #EAEBED;
   }
 

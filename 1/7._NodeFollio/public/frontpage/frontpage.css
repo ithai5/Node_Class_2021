@@ -6,7 +6,7 @@
     
 }
 .profile-picture img{
-    filter: drop-shadow(0 0 0.95rem #2f5a9179);
+    filter: drop-shadow(5px -10px 10px #2f5a9179);
 }
 
 @font-face {
@@ -42,17 +42,20 @@
     padding-left: 100px;
     font-family: Karantina-bold;
     font-size: 40px;
+    
 
 }
 .last-name{
-    color: rgb(73, 73, 73);
+    color: #C46D5E;;
 }
+
 .moto{
     font-family: WorkSans-Regular;
     font-size: 24px;
+    
 }
 .moto-color{
-    color: #2F5A91;
+    color: #C46D5E;
 }
 
 
@@ -61,7 +64,7 @@
         display: none;
     }
     .moto{
-        margin-left: 0px ;
+        margin-left: 0px;
     }
     
 }

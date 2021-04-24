@@ -4,7 +4,7 @@ const router = require('express').Router() //an object the contain the route fun
 const projects = [
         {
             title: "Portfolio",
-            technologiesInvolve: ["node.js", "html", "css", "javaScript"],
+            technologiesInvolve: ["node.js", "HTML", "CSS", "JavaScript"],
             gitLink: "https://github.com/ithai5/Node_Class_2021/tree/main/1/7._NodeFollio",
             description: "You are here already!",
             picture: "String"
@@ -12,7 +12,7 @@ const projects = [
 
         {
             title: "Student Social Media",
-            technologiesInvolve: ["Angular", "JavaScript", "css"],
+            technologiesInvolve: ["Angular", "JavaScript", "CSS"],
             gitLink: "String",
             description: "This project is a part of KEA class in Angular. Creating a social media for students where they can intercate with each other and with there classes and activities",
             picture: "String"
@@ -26,13 +26,13 @@ const projects = [
         },
         {
             title:"D&A Kosher",
-            technologiesInvolve:["React", "Java", "MySQL", "Spring"],
+            technologiesInvolve:["React", "Java", "MySQL", "Java-Spring"],
             gitLink:"https://github.com/ithai5/dandakosher-frontend",
             description: "A full web application, used for a company to sell their "
         },
         {
             title:"Nordic Motorhome",
-            technologiesInvolve:["Java", "Spring Boot", "html", "CSS", "MySQL"],
+            technologiesInvolve:["Java", "Spring-Boot", "HTML", "CSS", "MySQL"],
             gitLink:"https://github.com/ithai5/Nordic-Motorhome",
             description: "Part of my school work, a full web application, implament self created booking system"
         }
