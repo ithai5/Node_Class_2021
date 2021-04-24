@@ -19,7 +19,7 @@ const projects = [
         },
         {
             title: "World of Tanks Royal",
-            technologiesInvolve: ["VueJS"],
+            technologiesInvolve: ["VueJS","CSS", "HTML"],
             gitLink:"https://git.doebl.eu/springfrosch/rt-frontend",
             description: "Front-end appliction for World of Tanks. Helps players to communcate with each other and organize their gamming groups",
             picture:""

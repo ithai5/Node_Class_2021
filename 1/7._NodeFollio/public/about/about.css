@@ -1,0 +1,10 @@
+.about-content{
+    font-family: WorkSans-ExtraLight;
+    margin-left: 100px;
+    font-size: 20px;
+    width: 70%;
+
+}
+.about-content div{
+    margin: 5px;
+}

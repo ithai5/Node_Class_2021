@@ -1,9 +1,12 @@
 
-.profile-picture{
-    
+.profile-picture{   
+
     float: right;
 
     
+}
+.profile-picture img{
+    filter: drop-shadow(0 0 0.95rem #2f5a9179);
 }
 
 @font-face {
@@ -20,20 +23,33 @@
     font-family: Karantina-Regular;
     src: url('../fonts/Karantina/Karantina-Regular.ttf');
 }
+    
+@font-face {
+    font-family: WorkSans-Regular;
+    src: url('../fonts/WorkSans/WorkSans-Regular.ttf');
+}
+@font-face {
+    font-family: WorkSans-ExtraLight;
+    src: url('../fonts/WorkSans/WorkSans-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: WorkSans-SamiBold;
+    src: url('../fonts/WorkSans/WorkSans-SemiBold.ttf');
+}
 .title{
-    padding: 50px;
+    padding-top: 140px;
+    padding-left: 100px;
     font-family: Karantina-bold;
     font-size: 40px;
 
 }
 .last-name{
-    margin-left: 20px;
     color: rgb(73, 73, 73);
 }
 .moto{
-    margin-left: 100px;
-    font-family: Karantina-Regular;
-    font-size: 40px;
+    font-family: WorkSans-Regular;
+    font-size: 24px;
 }
 .moto-color{
     color: #2F5A91;

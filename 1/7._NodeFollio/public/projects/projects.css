@@ -1,54 +1,52 @@
 .project{
     border: solid thin rgb(75, 75, 75);
     border-radius: 5px;
-    width: 550px;
-    height: 250px;
+    width: 45%; 
+    height: 250px; 
     float: left;
-    margin: 15px;
-    background-color: rgb(49, 49, 49);
-    box-shadow: 2px 2px 4px rgb(17, 16, 16);
+    margin: 1%;
+    background-color:  #C7D3DD;
+    box-shadow: 2px 2px 4px rgb(134, 134, 134);
     text-align: center;
-    font-family: Karantina-Bold;
     font-size: 24px;
-    letter-spacing: 2px;
-    padding: 30px;
-    color: rgb(156, 169, 180);
+    /* letter-spacing: 2px; */
+    padding: 1%;
+    color: #14263E;
     -webkit-transition: All 0.5s ease-in-out
 
 }
+.project-description{
+    font-family: WorkSans-Regular;
+    font-size: 15px;
+}
 .project-tech{
-    border: solid thin rgb(78, 78, 78) ;
+    
     float: left;
     margin: 10px;
-    color: #2F5A91;
+
     padding: 5px;
-    font-size: 30px;
+    font-size: 15px;
     margin: 5px;
     border-radius: 7px;
     -webkit-transition: All 0.5s ease-in-out
 
 }
 
-.project-tech:hover{
-    
-    color: #2a4e7e;
-
-}
 .technologies{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 95%;
+    width: 50%;
 }
 
 
 .project:hover{
-    background-color: rgb(80, 80, 80);
+    background-color: #E8EEF2;
 
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 950px){
     .project{
-        width: 200px;
+        width: 90%;
         height: fit-content;
     }    
 }

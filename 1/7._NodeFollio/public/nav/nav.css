@@ -1,9 +1,18 @@
+html{
+  
+}
 body{
   margin: 0;
-  font-family: sans-serif;
+  font-family: WorkSans-SamiBold;
   background-color: rgb(49, 49, 49);
-  background-image: linear-gradient(to bottom right,  rgb(128, 128, 128), rgb(49, 49, 49));
-  color: rgb(158, 158, 158);
+  /* background-image: linear-gradient(to bottom right,  rgb(128, 128, 128), rgb(49, 49, 49)); */
+  /* background-image: linear-gradient(to bottom right, #D4F4DD, #17BEBB ); */
+  background-image: radial-gradient(farthest-corner at 1100px 400px,
+      #E8EEF2 0%, #77B6EA 100%);
+  /* background: linear-gradient(0.25turn, #D4F4DD, #17BEBB); */
+  color: #14263E;
+  height: 100%;
+  
 }
 ul {
   list-style-type: none;
@@ -14,7 +23,8 @@ ul {
 }
 
 #open-icon{
-  margin-left: 10px;
+  margin-top: 0px;
+  margin-left: 55px;
   cursor: pointer;
 }
 
@@ -34,7 +44,7 @@ li a:hover {
   background-color: rgba(219, 219, 219, 0.753);
 }
 
-.main-content{
+.main-content{  
   padding-top: 50;
   width: 90%;
   margin: 50px;
@@ -54,6 +64,7 @@ li a:hover {
 
   
 }
+
 
 
 
@@ -81,7 +92,10 @@ nav{
 
 
 .main-title{
-  margin: 30px;
+  font-size: 50px;
+  font-family:  WorkSans-SamiBold;
+  margin-left: 90px;
+  
 }
 
 .links{
@@ -127,9 +141,9 @@ nav{
   height: 50px;
 }
 
-@media only screen and (max-width: 600px){
+/* @media only screen and (max-width: 600px){
   body{}
-
+ */
   .social-media{
     top: 30px;
   }  

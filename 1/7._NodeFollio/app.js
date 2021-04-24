@@ -22,6 +22,7 @@ const footer = fs.readFileSync(__dirname + "/public/footer/footer.html", "utf-8"
 const frontpage = fs.readFileSync(__dirname + "/public/frontpage/frontpage.html" , "utf-8")
 const projects = fs.readFileSync(__dirname + "/public/projects/projects.html", "utf-8")
 const contact = fs.readFileSync(__dirname + "/public/contact/contact.html", "utf-8")
+const about = fs.readFileSync(__dirname + "/public/about/about.html", "utf-8")
 
 
 app.get("/", (req,res) => {
@@ -37,8 +38,8 @@ app.get("/contact", (req,res) => {
     res.send(nav + contact + footer)
 })
 
-app.get("/test" , (req, res) => {
-    res.send(footer + nav + nav )
+app.get("/about", (req,res)=>{
+    res.send(nav + about + footer)
 })
 
 

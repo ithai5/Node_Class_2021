@@ -11,3 +11,5 @@ function closeMenu(){
         $("#open-icon").fadeIn()
     }, 500);
 }
+
+console.log(document.getElementsByClassName("main-title"))
